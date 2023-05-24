@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Fitness Survey</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <h1 id="title">Running Fitness Survey Form</h1>
+  <p id="description">Thank you for taking your time to help us improve our training programs</p>
+  <form id="survey-form">
+    <div class="form-control">
+      <label for="name" id="label-name">Name</label>
+      <input type="text" id="name" placeholder="Enter your Name" required />
+    </div>
+
+    <div class="form-control">
+      <label for="email" id="label-email">Email</label>
+      <input type="text" id="email" placeholder="Enter your email" required />
+    </div>
+
+    <div class="form-control">
+      <label for="number" id="label-number">Age</label>
+      <input type="number" id="number" placeholder="Enter your age" required min="1" max="100" />
+    </div>
+
+    <div class="form-control">
+      <label for="duration" id="label-duration">How many years have you been practicing active running? </label>
+      <select class="role" id="dropdown">
+        <option value="less-than-1-year">less than 1 year</option>
+        <option value="1-2-years">1-2 years</option>
+        <option value="3-4-years">3-4 years</option>
+        <option value="over-5-years">over 5 years</option>
+      </select>
+    </div>
+    <div class="form-control">
+      <label>Would you recommend our training programs to a friend?</label>
+      <label for="recommend-1"><input type="radio" id="recommend-1" name="recommend" value="Definitly" />Definitly</label>
+      <label for="recommend-2"><input type="radio" id="recommend-2" name="recommend" value="Maybe" />Maybe</label>
+      <label for="recommend-3"><input type="radio" id="recommend-3" name="recommend" value="Not sure" />Not sure</label>
+    </div>
+
+    <div class="form-control">
+      <label for="mileage" id="label-mileage">How many km do you run in a week? </label>
+      <select class="mileage" id="label-mileage">
+        <option value="0-20km">0-20km</option>
+        <option value="21-40km">21-40km</option>
+        <option value="41-60km">41-60km</option>
+        <option value="61-80km">61-80km</option>
+        <option value="over-81-km">over 81 km</option>
+      </select>
+    </div>
+
+    <div class="form-control">
+      <label>Whats your favorite running sessions<small>(Check all that apply)</small></label>
+      <label for="sessions-1"><input type="checkbox" name="sessions" id="sessions-1" value="sessions-1" />Recovery Run</label>
+      <label for="sessions-2"><input type="checkbox" name="sessions" id="sessions-2" value="sessions-2" />Easy run</label>
+      <label for="sessions-3"><input type="checkbox" name="sessions" id="sessions-3" value="sessions-3" />Hill repeats</label>
+      <label for="sessions-4"><input type="checkbox" name="sessions" id="sessions-4" value="sessions-4" />Tempo</label>
+      <label for="sessions-5"><input type="checkbox" name="sessions" id="sessions-5" value="sessions-5" />Progressive run</label>
+      <label for="sessions-6"><input type="checkbox" name="sessions" id="sessions-6" value="sessions-6" />Long run</label>
+      <label for="sessions-7"><input type="checkbox" name="sessions" id="sessions-7" value="sessions-7" />Speed intervals</label>
+    </div>
+
+    <div class=" form-control">
+        <label for="comments">Do you have any comments or suggestions?</label>
+        <textarea name="comments" rows="8" cols="80" placeholder="Enter your comment here..."></textarea>
+    </div>
+    <button class="btn" type="submit" id="Submit">Submit</button>
+  </form>
+  <img src="mountain.jpg" alt="mountain">
+</body>
+
+</html>
